@@ -1,7 +1,12 @@
 /********************
 YOUR STYLES
 *******************/
+
+
 h1 {
+    background: black;
+    color: beige;
+    margin: inherit;
     text-align: center;
     font-family: "Avenir";
 }
@@ -13,16 +18,22 @@ header {
 }
 
 
-
 /* Main Container */
 
 
 /* Gallery Styling */
+
 figure img {
-    width: 100px;
-  display: flex;
-  justify-content: center;
-    
+width: 100px;
+display: flex;
+justify-content: center;
+filter: sepia(1);
+transition: .2s ease-in-out;
+padding: .1em;  
+}
+
+figure img:hover {
+    filter: none;
 }
 
 
@@ -31,30 +42,26 @@ figure img {
     flex-wrap:wrap;
     width: 100%;
     margin: auto;
-  background: black;
+  
 }
 
 figure {
-    background:grey;
+    background:black;
     padding: 20px;
     width: 310px;
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
    }
 
 figcaption {
+    color: whitesmoke;
     text-align: center;
     font-family: "Avenir";
 }
 
 
-.all { 
-    background:grey;
-    width: 700px;
-    margin: auto;
-}
+
 
 footer {
     margin: auto;
